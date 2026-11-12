@@ -1,0 +1,10 @@
+split,fruit,Unripe,Turning,Ripe,Overripe
+test_real,banana,0,13,17,18
+test_seen,banana,0,0,107,54
+test_seen,tomato,53,77,424,80
+test_unseen,banana,0,0,100,0
+test_unseen,tomato,0,307,297,321
+train,banana,0,20,351,177
+train,tomato,134,199,1086,207
+val,banana,0,4,71,34
+val,tomato,24,35,182,33

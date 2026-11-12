@@ -1,0 +1,8 @@
+| split | head | Accuracy | MAE | Within ±1 | Severe errors (≥2) | QWK | Macro-F1 |
+|---|---|---|---|---|---|---|---|
+| Real-world bananas | Cross-entropy (baseline) | 0.792 ± 0.0 | 0.208 ± 0.0 | 1.0 ± 0.0 | 0.0 ± 0.0 | 0.829 ± 0.0 | 0.806 ± 0.0 |
+| Real-world bananas | CORAL (ordinal) | 0.833 ± 0.0 | 0.167 ± 0.0 | 1.0 ± 0.0 | 0.0 ± 0.0 | 0.856 ± 0.0 | 0.843 ± 0.0 |
+| Seen varieties | Cross-entropy (baseline) | 1.0 ± 0.0 | 0.0 ± 0.0 | 1.0 ± 0.0 | 0.0 ± 0.0 | 1.0 ± 0.0 | 1.0 ± 0.0 |
+| Seen varieties | CORAL (ordinal) | 0.995 ± 0.0 | 0.005 ± 0.0 | 1.0 ± 0.0 | 0.0 ± 0.0 | 0.995 ± 0.0 | 0.995 ± 0.0 |
+| Unseen varieties | Cross-entropy (baseline) | 0.982 ± 0.0 | 0.018 ± 0.0 | 1.0 ± 0.0 | 0.0 ± 0.0 | 0.985 ± 0.0 | 0.983 ± 0.0 |
+| Unseen varieties | CORAL (ordinal) | 0.999 ± 0.0 | 0.001 ± 0.0 | 1.0 ± 0.0 | 0.0 ± 0.0 | 0.999 ± 0.0 | 0.999 ± 0.0 |

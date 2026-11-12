@@ -1,0 +1,16 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Raw datasets are re-downloaded with the commands in README.md
+data/raw/
+
+# Large, regenerable training outputs (the site's 8-bit models in site/models are kept)
+outputs/models/
+outputs/onnx_fp32/
+
+# Node and Cloudflare tooling
+docs/build/node_modules/
+.wrangler/
+**/.wrangler/
