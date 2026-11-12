@@ -22,8 +22,6 @@ src/
   predict.py        grade one image from the command line
   export_onnx.py    exports both models to 8-bit ONNX for the browser
   build_site.py     builds the static site in site/ for Cloudflare Pages
-  make_report.py    writes docs/Project_Report.docx from the results
-  make_slides.py    writes docs/Presentation.pptx from the results
 app/
   app.py            Flask server for the local demo
   static/index.html the sketchbook UI (shared by the local app and the hosted site)
@@ -32,8 +30,17 @@ data/
   raw/hf_bananas    real-world banana photos (Hugging Face josedonoso/bananas-dataset-v1)
   self_collected/   your own photos: <fruit>/<grade>_<name>/*.jpg
 outputs/            checkpoints, per-run JSON, predictions, figures, summary tables
-docs/               report, slides, viva preparation
+docs/
+  Viva_QA.md        viva preparation
+  build/            make_report.js / make_slides.js write docs/Project_Report.docx and
+                    docs/Presentation.pptx from outputs/results.json (not generated yet)
+site/               the static site deployed to Cloudflare Pages
 ```
+
+See also [WORKFLOW.md](WORKFLOW.md) (step-by-step guide) and [CONTRIBUTIONS.md](CONTRIBUTIONS.md) (who owns which part).
+
+Model checkpoints (`outputs/models/`) and raw datasets (`data/raw/`) are not in the repository; download the
+data with the commands below and train with `run_experiments.sh`.
 
 ## Setup (Windows, Git Bash)
 
